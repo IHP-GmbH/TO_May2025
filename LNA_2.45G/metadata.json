@@ -1,0 +1,14 @@
+{
+  "ProjectName": "FMD_QNC_LNA_2.45G",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "LNA_2.45G",
+    "FinalGdsName": "FMD_QNC_LNA_2_45.gds",
+    "TopCellName": "FMD_QNC_LNA_2_45",
+    "Width": "1.050mm",
+    "Height": "1.050mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}
