@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-301,-1560,7292,2397,0.370278,37,234>
+  <View=-275,-907,4189,1756,1.16209,2593,732>
   <Grid=10,10,1>
-  <DataSet=160GHz_LNA_pi_model.dat>
-  <DataDisplay=160GHz_LNA_pi_model.dpl>
+  <DataSet=220GHz_LNA_pi_model.dat>
+  <DataDisplay=220GHz_LNA_pi_model.dpl>
   <OpenDisplay=0>
   <Script=Bandwidth extension.m>
   <RunScript=0>
