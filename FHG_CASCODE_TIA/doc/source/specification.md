@@ -8,7 +8,7 @@ The design was carried out with a focus on efficiency and performance, and inclu
 ![FHG TIA Schematic](images/fhg-tia-schematic.jpeg)
 
 ## TIA's Layout
-![VCO Layout](images/fhg-tia-layout.jpeg)
+![FHG TIA Schematic](images/fhg-tia-layout.jpeg)
 
 
 | **Parameter**                         | **Value**                 |
