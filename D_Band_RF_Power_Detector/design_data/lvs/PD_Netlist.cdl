@@ -1,0 +1,43 @@
+* Qucs 25.1.2  C:/Users/nsl/QucsWorkspace/ikram_prj/Power Detector Netlist.sch
+
+.SUBCKT IHP_PDK_basic_components_rppd  gnd P1 P2 w=1.0e-6 l=0.5e-6 m=1
+X1 P1 P2 rppd w={w} l={l} m={m}
+.ENDS
+  
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_lv_nmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 mlist=1
+X1 d g s b  sg13_lv_nmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout} 
+.ENDS
+  
+
+.SUBCKT IHP_PDK_basic_components_cap_cmim  gnd P1 P2  l=7.0u w=7.0u
+X1 P1 P2 cap_cmim l={l} w={w}
+.ENDS
+  
+
+.SUBCKT IHP_PDK_nonlinear_components_npn13G2  gnd c b e bn Nx=1  
+X1 c b e bn npn13G2 Nx={Nx} 
+.ENDS
+  
+.GLOBAL 0:G
+
+.SUBCKT FMD_QNC_D_BAND_PD
+Xrppd4 0  _net0 Vout1 IHP_PDK_basic_components_rppd w=9U l=5U m=1
+Xsg13_lv_nmos1 0  _net0 RefCurrent 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=12U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xcap_cmim1 0  Vout1 0 IHP_PDK_basic_components_cap_cmim l=50U w=50U
+Xnpn13G2 0  VCC1p3V _net1 _net0 0 IHP_PDK_nonlinear_components_npn13G2 Nx=4
+Xrppd1 0  VBIAS1V _net1 IHP_PDK_basic_components_rppd w=14.0U l=3U m=1
+Xcap_cmim3 0  RF_INPUT _net2 IHP_PDK_basic_components_cap_cmim l=40U w=40U
+Xcap_cmim4 0  _net2 _net1 IHP_PDK_basic_components_cap_cmim l=60U w=60U
+
+Xnpn13G1 0  VCC1p3V _net4 _net3 0 IHP_PDK_nonlinear_components_npn13G2 Nx=4
+
+Xrppd2 0  VBIAS1V _net4 IHP_PDK_basic_components_rppd w=14.0U l=3U m=1
+Xsg13_lv_nmos3 0  _net3 RefCurrent 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=12U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xcap_cmim6 0  VCC1p3V _net5 IHP_PDK_basic_components_cap_cmim l=50U w=50U
+Xcap_cmim7 0  VBIAS1V _net6 IHP_PDK_basic_components_cap_cmim l=50U w=50U
+Xcap_cmim5 0  VBIAS1V _net7 IHP_PDK_basic_components_cap_cmim l=50U w=50U
+Xrppd3 0  Vout2 _net3 IHP_PDK_basic_components_rppd w=9U l=5U m=1
+Xcap_cmim2 0  Vout2 0 IHP_PDK_basic_components_cap_cmim l=50U w=50U
+.END

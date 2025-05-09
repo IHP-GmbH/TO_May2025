@@ -1,0 +1,31 @@
+Layer areas and percetages
+------------------------------------------------
+
+Total Area = 966000.0um^2
+
+Activ Area = 391689.861um^2
+Activ %    = 40.548% Min = 35 Max = 55
+
+GatPoly Area = 227848.039um^2
+GatPoly %    = 23.587% Min = 15
+
+Metal1 Area = 459307.306um^2
+Metal1 %    = 47.547% Min = 35 Max = 60
+
+Metal2 Area = 391666.192um^2
+Metal2 %    = 40.545% Min = 35 Max = 60
+
+Metal3 Area = 391737.577um^2
+Metal3 %    = 40.553% Min = 35 Max = 60
+
+Metal4 Area = 391745.571um^2
+Metal4 %    = 40.553% Min = 35 Max = 60
+
+Metal5 Area = 400461.732um^2
+Metal5 %    = 41.456% Min = 35 Max = 60
+
+TopMetal1 Area = 386580.88um^2
+TopMetal1 %    = 40.019% Min = 25 Max = 70
+
+TopMetal2 Area = 380459.05700000003um^2
+TopMetal2 %    = 39.385% Min = 25 Max = 70

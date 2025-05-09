@@ -1,0 +1,47 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 08/05/2025 09:49
+
+.SUBCKT FMD_QNC_D_BAND_PD 1.3V\x20VCC RF\x20INPUT VOUT1 VOUT2 1V\x20VBIAS
++ 1V\x20BIAS
+M$1 \$9174 \$9174 \$9174 \$9174 sg13_lv_nmos L=1u W=26u AS=8.84p AD=8.84p
++ PS=54.72u PD=54.72u
+M$2 \$178472 \$184648 \$9174 \$9174 sg13_lv_nmos L=1u W=12u AS=4.08p AD=4.08p
++ PS=24.68u PD=24.68u
+M$3 \$9174 \$184648 \$184648 \$9174 sg13_lv_nmos L=1u W=12u AS=4.08p AD=4.08p
++ PS=24.68u PD=24.68u
+M$4 \$9174 \$184648 \$178473 \$9174 sg13_lv_nmos L=1u W=12u AS=4.08p AD=4.08p
++ PS=24.68u PD=24.68u
+M$7 \$189255 \$191975 \$189254 \$9174 sg13_lv_nmos L=1u W=4u AS=1.06p AD=1.06p
++ PS=8.12u PD=8.12u
+M$9 \$9174 \$191975 \$191975 \$9174 sg13_lv_nmos L=1u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$13 \$189255 \$196789 \$191975 \$9174 sg13_lv_nmos L=1u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$14 \$196789 \$191975 \$9174 \$9174 sg13_lv_nmos L=1u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u
+M$15 1.3V\x20VCC 1.3V\x20VCC 1.3V\x20VCC 1.3V\x20VCC sg13_lv_pmos L=1u W=5u
++ AS=1.7p AD=1.7p PS=11.36u PD=11.36u
+M$16 1.3V\x20VCC \$189255 \$189255 1.3V\x20VCC sg13_lv_pmos L=1u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u
+M$19 1.3V\x20VCC \$189255 \$184648 1.3V\x20VCC sg13_lv_pmos L=1u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u
+M$21 1.3V\x20VCC \$189255 \$191975 1.3V\x20VCC sg13_lv_pmos L=1u W=5u AS=1.325p
++ AD=1.325p PS=8.56u PD=8.56u
+M$23 1.3V\x20VCC \$196789 \$196789 1.3V\x20VCC sg13_hv_pmos L=5u W=0.5u
++ AS=0.17p AD=0.17p PS=1.68u PD=1.68u
+Q$24 1.3V\x20VCC \$245038 \$178472 \$9174 npn13G2 AE=0.063p PE=1.94u AB=25.605p
++ PB=23.02u AC=25.589984p PC=23.01u NE=4 m=4
+Q$28 1.3V\x20VCC \$242238 \$178473 \$9174 npn13G2 AE=0.063p PE=1.94u AB=25.605p
++ PB=23.02u AC=25.589984p PC=23.01u NE=4 m=4
+R$32 VOUT1 \$178472 rppd w=9u l=5u ps=0 b=0 m=1
+R$33 VOUT2 \$178473 rppd w=9u l=5u ps=0 b=0 m=1
+R$34 \$242238 1V\x20VBIAS rppd w=14u l=3u ps=0 b=0 m=1
+R$35 \$245038 1V\x20BIAS rppd w=14u l=3u ps=0 b=0 m=1
+R$36 \$9174 \$189254 rhigh w=3u l=17u ps=0 b=0 m=1
+C$37 \$179413 \$9174 cap_cmim w=50u l=50u A=2500p P=200u m=1
+C$38 VOUT1 \$9174 cap_cmim w=50u l=50u A=2500p P=200u m=1
+C$39 \$9174 \$245038 cap_cmim w=60u l=60u A=3600p P=240u m=1
+C$40 VOUT2 \$9174 cap_cmim w=50u l=50u A=2500p P=200u m=1
+C$41 1V\x20BIAS \$9174 cap_cmim w=50u l=50u A=2500p P=200u m=1
+C$42 RF\x20INPUT \$9174 cap_cmim w=40u l=40u A=1600p P=160u m=1
+C$43 \$358554 \$9174 cap_cmim w=50u l=50u A=2500p P=200u m=1
+.ENDS FMD_QNC_D_BAND_PD
