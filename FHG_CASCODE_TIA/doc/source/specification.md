@@ -14,5 +14,5 @@ The design was carried out with a focus on efficiency and performance, and inclu
 | **Parameter**                         | **Value**                 |
 |---------------------------------------|---------------------------|
 | **Frequency Range**                   | 6.0 GHz                   |
-| **Supply Voltage (Vdd)**              | 1.2 mV                   |
+| **Supply Voltage (Vdd)**              | 1.2 V                     |
 | **Operating Temperature Range**       | 10-200°C                  |
