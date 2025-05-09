@@ -1,0 +1,36 @@
+** sch_path: /foss/designs/TIA/TIA_cascode1.sch
+**.subckt TIA_cascode1
+XM1 net1 net7 GND GND sg13_lv_nmos w=30u l=0.2u ng=6 m=1
+XM2 net2 Vcasn net1 GND sg13_lv_nmos w=30u l=0.2u ng=6 m=1
+XM3 net4 Bias_amp VDD VDD sg13_lv_pmos w=60u l=0.2u ng=12 m=1
+XM4 net1 Vcasp net4 net4 sg13_lv_pmos w=60u l=0.2u ng=12 m=1
+XM5 net5 net5 VDD VDD sg13_lv_pmos w=25u l=0.2u ng=6 m=1
+XM6 T net5 VDD VDD sg13_lv_pmos w=25u l=0.2u ng=6 m=1
+XM7 net5 net2 net6 GND sg13_lv_nmos w=12.5u l=0.2u ng=3 m=1
+XM8 T T net6 GND sg13_lv_nmos w=12.5u l=0.2u ng=3 m=1
+XM9 net6 Bias_buffer GND GND sg13_lv_nmos w=7.5u l=0.2u ng=2 m=1
+V1 VDD GND 1.2
+I_in net3 GND PWL(0 0 250p 40u 500p 0)
+Rl VDD net2 550 m=1
+Rf T net7 10k m=1
+V2 Bias_buffer GND 0.55
+V3 Vcasp GND 0.22
+V4 Vcasn GND 1.2
+V5 Bias_amp GND 1.2
+Rc net8 net7 50 m=1
+C1 net3 net8 1p m=1
+**** begin user architecture code
+
+.control
+#dc Vin 0 1.8 0.01
+tran 20n 50n
+#write inverter.raw
+.endc
+
+ .lib cornerMOSlv.lib mos_tt
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
