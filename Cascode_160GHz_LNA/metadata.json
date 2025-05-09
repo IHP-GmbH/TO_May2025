@@ -3,11 +3,11 @@
   "Shuttle": "MPW 0.13µm May 2025(T588)",
   "Technology": "SG13G2",
   "Design": {
-    "DesignName": "ExampleDesign",
-    "FinalGdsName": "FMD_QNC_ExampleDesign.gds",
-    "TopCellName": "FMD_QNC_ExampleDesign",
-    "Width": "1.2mm",
-    "Height": "1.4mm",
+    "DesignName": "Cascode_160GHz_LNA",
+    "FinalGdsName": "FMD_QNC_Cascode_160GHz_LNA.gds",
+    "TopCellName": "FMD_QNC_Cascode_160GHz_LNA",
+    "Width": "950um",
+    "Height": "1150um",
     "NumberOfSamples": "10"
   },
   "FinalWaferThickness": "200um"
