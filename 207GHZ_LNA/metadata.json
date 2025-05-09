@@ -4,10 +4,10 @@
   "Technology": "SG13G2",
   "Design": {
     "DesignName": "ExampleDesign",
-    "FinalGdsName": "FMD_QNC_ExampleDesign.gds",
-    "TopCellName": "FMD_QNC_ExampleDesign",
-    "Width": "1.2mm",
-    "Height": "1.4mm",
+    "FinalGdsName": "FMD_QNC_207GHz_LNA.gds",
+    "TopCellName": "FMDFMD_QNC_207GHz_LNA",
+    "Width": "770um",
+    "Height": "1070um",
     "NumberOfSamples": "10"
   },
   "FinalWaferThickness": "200um"
