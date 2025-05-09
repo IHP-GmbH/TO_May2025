@@ -1,0 +1,30 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 08/05/2025 23:42
+
+.SUBCKT TOP \$1.VBB2 \$1.VBB1
+C$1 \$I117 \$1 cap_cmim w=40u l=20u A=800p P=120u m=6
+C$2 \$1.VBB2 \$1 cap_cmim w=20u l=25u A=500p P=90u m=6
+C$4 \$1.VBB1 \$1 cap_cmim w=20u l=25u A=500p P=90u m=4
+C$14 \$1.VBB1 \$1 cap_cmim w=25u l=25u A=625p P=100u m=1
+C$15 \$1.VBB1 \$1 cap_cmim w=15u l=25u A=375p P=80u m=1
+R$19 \$I133 \$I117 rppd w=15.04u l=0.5u ps=0 b=0 m=1
+R$20 \$I139 \$I117 rppd w=15.04u l=0.5u ps=0 b=0 m=1
+R$21 \$I143 \$I117 rppd w=15.04u l=0.5u ps=0 b=0 m=1
+R$22 \$I132 \$1.VBB1 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+R$23 \$1.VBB2 \$I134 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+R$24 \$I138 \$1.VBB1 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+R$25 \$1.VBB2 \$I140 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+R$26 \$I142 \$1.VBB1 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+R$27 \$1.VBB2 \$I144 rhigh w=2.5u l=10.75u ps=0 b=0 m=1
+Q$28 \$I133 \$I134 \$I131 \$1 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+Q$38 \$I139 \$I140 \$I137 \$1 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+Q$48 \$I143 \$I144 \$I141 \$1 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+Q$58 \$I131 \$I132 \$1 \$1 npn13G2 AE=0.063p PE=1.94u AB=19.2965p PB=19.32u
++ AC=19.283334p PC=19.31u NE=3 m=3
+Q$61 \$I137 \$I138 \$1 \$1 npn13G2 AE=0.063p PE=1.94u AB=19.2965p PB=19.32u
++ AC=19.283334p PC=19.31u NE=3 m=3
+Q$64 \$I141 \$I142 \$1 \$1 npn13G2 AE=0.063p PE=1.94u AB=19.2965p PB=19.32u
++ AC=19.283334p PC=19.31u NE=3 m=3
+.ENDS TOP
