@@ -3,7 +3,7 @@
   "Shuttle": "MPW 0.13µm May 2025(T588)",
   "Technology": "SG13G2",
   "Design": {
-    "DesignName": "ExampleDesign",
+    "DesignName": "207GHz_LNA",
     "FinalGdsName": "FMD_QNC_207GHz_LNA.gds",
     "TopCellName": "FMDFMD_QNC_207GHz_LNA",
     "Width": "770um",
