@@ -10,8 +10,9 @@ The design was carried out with a focus on efficiency and performance, and inclu
 ## TIA's Layout
 ![VCO Layout](images/fhg-tia-layout.jpeg)
 
-| **Parameter**                   | **Value**               |
-|---------------------------------|-------------------------|
-| **Frequency Range**             | 2.64 GHz                |
-| **Supply Voltage (Vdd)**        | 1.21 V                  |
-| **Operating Temperature**       | -269°C                  |
+
+| **Parameter**                         | **Value**                 |
+|---------------------------------------|---------------------------|
+| **Frequency Range**                   | 6.0 GHz                   |
+| **Supply Voltage (Vdd)**              | 0.02 mV                   |
+| **Operating Temperature Range**       | 10-200°C                  |
