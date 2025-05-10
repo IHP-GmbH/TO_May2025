@@ -1,0 +1,169 @@
+{
+  "name": "Tiny Tapeout IHP 0p3",
+  "repo": "https://github.com/TinyTapeout/tinytapeout-ihp-0p3",
+  "commit": "9bc87b726f379f86479157e556d2f754a2659c30",
+  "commit_date": 1746883367,
+  "layout": {
+    "muxes": [
+      [
+        "digital",
+        "digital",
+        "digital",
+        "digital"
+      ],
+      [
+        "digital",
+        "digital",
+        "digital",
+        "digital"
+      ]
+    ]
+  },
+  "version": 3,
+  "projects": [
+    {
+      "macro": "tt_um_chip_rom",
+      "address": 0,
+      "x": 1,
+      "y": 3,
+      "tiles": "1x1",
+      "repo": "https://github.com/TinyTapeout/tt-chip-rom",
+      "commit": "bb743722e70e5313617c15b7d6f487745634a0fa"
+    },
+    {
+      "macro": "tt_um_factory_test",
+      "address": 1,
+      "x": 1,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/TinyTapeout/ttihp25b-factory-test",
+      "commit": "b28b201f166715eea38610262b857cba31edb53e"
+    },
+    {
+      "macro": "tt_um_htfab_r2r_dac",
+      "address": 3,
+      "x": 0,
+      "y": 2,
+      "tiles": "1x1",
+      "repo": "https://github.com/htfab/ttihp0p3-r2r-dac",
+      "commit": "263c658b55aa436c2c3bc7ac977b324de829b9cc"
+    },
+    {
+      "macro": "tt_um_algofoogle_antonalog",
+      "address": 130,
+      "x": 0,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/algofoogle/ttihp0p3-antonalog",
+      "commit": "3e9611e5136037af2c87dff59e4109ffa5835472"
+    },
+    {
+      "macro": "tt_um_rte_eink_driver",
+      "address": 131,
+      "x": 0,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/RTimothyEdwards/ttihp-eink-driver",
+      "commit": "44292a4042f6673f474a62af7c3fe86958cac8b5"
+    },
+    {
+      "macro": "tt_um_bleeptrack_prism",
+      "address": 129,
+      "x": 1,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/bleeptrack/tt-prism",
+      "commit": "9463640a1c0536040459fce64a34a3c19c331d6f"
+    },
+    {
+      "macro": "tt_um_calonso88_spi_test",
+      "address": 193,
+      "x": 2,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/calonso88/ttihp0p3_spi_test",
+      "commit": "23b8cc582c1ee24690da5859aa2662b1d6b6a50d"
+    },
+    {
+      "macro": "tt_um_sathworld_spi_pwm_peripheral",
+      "address": 195,
+      "x": 3,
+      "y": 0,
+      "tiles": "1x1",
+      "repo": "https://github.com/sathworld/spi-pwm-peripheral",
+      "commit": "e6c484f45283c628bcef67c8f789f064a6fb3a67"
+    },
+    {
+      "macro": "tt_um_lfsr_stevej",
+      "address": 128,
+      "x": 1,
+      "y": 1,
+      "tiles": "1x1",
+      "repo": "https://github.com/stevej/ttihp0p3-lfsr-stevej",
+      "commit": "be2ea9822fccf9362a6cf3d8f213a3192a6caa49"
+    },
+    {
+      "macro": "tt_um_strau0106_simple_viii",
+      "address": 2,
+      "x": 0,
+      "y": 3,
+      "tiles": "1x2",
+      "repo": "https://github.com/strau0106/tt-simple-viii",
+      "commit": "bb0ccb061bc2c1e398d36d6316e724dfeedce103"
+    },
+    {
+      "macro": "tt_um_algofoogle_ro_worker",
+      "address": 66,
+      "x": 3,
+      "y": 3,
+      "tiles": "1x1",
+      "repo": "https://github.com/algofoogle/ttihp0p3-ring-worker",
+      "commit": "78039540ae4cb52fed0c3c5ffa19817d94fff715"
+    },
+    {
+      "macro": "tt_um_vga_clock",
+      "address": 32,
+      "x": 1,
+      "y": 4,
+      "tiles": "1x1",
+      "repo": "https://github.com/mattvenn/ttihp0p3-vga-clock",
+      "commit": "0beca768a1e44f607420e278ab8aac98968bc733"
+    },
+    {
+      "macro": "tt_um_a1k0n_demo",
+      "address": 194,
+      "x": 3,
+      "y": 1,
+      "tiles": "2x2",
+      "repo": "https://github.com/a1k0n/tt08-vgademo",
+      "commit": "b2772943cd4ebb7783a85d071a15b626bf343833"
+    },
+    {
+      "macro": "tt_um_algofoogle_fun_vga_clock",
+      "address": 64,
+      "x": 2,
+      "y": 3,
+      "tiles": "1x2",
+      "repo": "https://github.com/algofoogle/ttihp0p3-fun-vga-clock",
+      "commit": "7caa0f8f96be1c97d6b1ef31bdea5e1cb2df0de1"
+    },
+    {
+      "macro": "tt_um_digital_clock_example",
+      "address": 98,
+      "x": 3,
+      "y": 4,
+      "tiles": "1x1",
+      "repo": "https://github.com/sellicott/digital_clock_ihp03",
+      "commit": "014f2f871e3f6ef39210a4c5f305231429293e64"
+    },
+    {
+      "macro": "tt_um_urish_simon",
+      "address": 35,
+      "x": 0,
+      "y": 5,
+      "tiles": "1x1",
+      "repo": "https://github.com/urish/ttihp25a-simon-game",
+      "commit": "e38f816299b1b752c2bfd2484a8a13ce8b5a9c8d"
+    }
+  ]
+}
