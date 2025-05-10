@@ -1,0 +1,316 @@
+v {xschem version=3.4.7RC file_version=1.2
+*
+* This file is part of XSCHEM,
+* a schematic capture and Spice/Vhdl/Verilog netlisting tool for circuit
+* simulation.
+* Copyright (C) 1998-2023 Stefan Frederik Schippers
+*
+* This program is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 240 -560 320 -560 {
+lab=VSS}
+N 320 -560 320 -480 {
+lab=VSS}
+N 240 -800 290 -800 {lab=f_freq}
+N 240 -1520 320 -1520 {
+lab=VDD}
+N 320 -1600 320 -1520 {
+lab=VDD}
+N 1360 -610 1360 -540 {lab=#net1}
+N 1200 -770 1200 -750 {lab=#net2}
+N 1520 -770 1520 -750 {lab=#net2}
+N 1120 -1330 1120 -800 {lab=#net3}
+N 1600 -1330 1600 -800 {lab=#net4}
+N 1200 -1410 1200 -1360 {lab=c1}
+N 1520 -1360 2080 -1360 {lab=c2}
+N 1520 -1410 1520 -1360 {lab=c2}
+N 1600 -1540 1600 -1390 {lab=#net5}
+N 1120 -1540 1120 -1390 {lab=#net6}
+N 1120 -610 1120 -540 {lab=#net7}
+N 1600 -610 1600 -540 {lab=#net8}
+N 1200 -1170 1200 -1040 {lab=out_p}
+N 1520 -1170 1520 -1040 {lab=out_n}
+N 1120 -800 1120 -670 {lab=#net3}
+N 1600 -800 1600 -670 {lab=#net4}
+N 1120 -800 1160 -800 {lab=#net3}
+N 1560 -800 1600 -800 {lab=#net4}
+N 640 -610 640 -540 {lab=#net9}
+N 1440 -930 1440 -880 {lab=#net10}
+N 1280 -930 1280 -880 {lab=#net10}
+N 1520 -1040 2080 -1040 {lab=out_n}
+N 1200 -1040 1280 -1040 {lab=out_p}
+N 1360 -750 1520 -750 {lab=#net2}
+N 1520 -1540 1520 -1470 {lab=#net11}
+N 1200 -1540 1200 -1470 {lab=#net12}
+N 350 -800 800 -800 {lab=#net13}
+N 1360 -750 1360 -670 {lab=#net2}
+N 480 -610 480 -540 {lab=#net14}
+N 540 -640 600 -640 {lab=#net15}
+N 480 -690 480 -670 {lab=#net15}
+N 480 -690 540 -690 {lab=#net15}
+N 540 -690 540 -640 {lab=#net15}
+N 520 -640 540 -640 {lab=#net15}
+N 240 -1360 1200 -1360 {lab=c1}
+N 1280 -1040 1280 -990 {lab=out_p}
+N 1440 -1040 1520 -1040 {lab=out_n}
+N 1320 -960 1400 -1040 {lab=out_n}
+N 1400 -1040 1440 -1040 {lab=out_n}
+N 1440 -1040 1440 -990 {lab=out_n}
+N 1320 -1040 1400 -960 {lab=out_p}
+N 1280 -1040 1320 -1040 {lab=out_p}
+N 1280 -880 1440 -880 {lab=#net10}
+N 640 -880 640 -670 {lab=#net10}
+N 240 -1040 1200 -1040 {lab=out_p}
+N 1520 -1040 1520 -830 {lab=out_n}
+N 1200 -1040 1200 -830 {lab=out_p}
+N 1200 -750 1360 -750 {lab=#net2}
+N 800 -610 800 -540 {lab=#net16}
+N 860 -690 860 -640 {lab=#net13}
+N 800 -690 860 -690 {lab=#net13}
+N 800 -690 800 -670 {lab=#net13}
+N 840 -640 860 -640 {lab=#net13}
+N 860 -640 1560 -640 {lab=#net13}
+N 240 -720 290 -720 {lab=f_gain}
+N 350 -720 480 -720 {lab=#net15}
+N 640 -880 1280 -880 {lab=#net10}
+N 480 -720 480 -690 {lab=#net15}
+N 800 -800 800 -690 {lab=#net13}
+N 1520 -1360 1520 -1230 {lab=c2}
+N 1200 -1360 1200 -1230 {lab=c1}
+N 960 -1170 960 -1150 {lab=#net17}
+N 960 -1550 960 -1480 {lab=#net18}
+N 960 -1010 960 -990 {lab=#net19}
+N 900 -960 920 -960 {lab=#net19}
+N 900 -1010 900 -960 {lab=#net19}
+N 900 -1010 960 -1010 {lab=#net19}
+N 960 -1090 960 -1010 {lab=#net19}
+N 900 -1120 920 -1120 {lab=#net17}
+N 900 -1170 900 -1120 {lab=#net17}
+N 900 -1170 960 -1170 {lab=#net17}
+N 960 -1200 960 -1170 {lab=#net17}
+N 960 -1200 1480 -1200 {lab=#net17}
+N 960 -1420 960 -1200 {lab=#net17}
+N 960 -930 960 -750 {lab=#net2}
+N 960 -750 1200 -750 {lab=#net2}
+C {title.sym} 160 -30 0 0 {name=l1 author="om"  net_name=true}
+C {ammeter.sym} 320 -800 3 1 {name=Vddd3
+savecurrent=true
+lvs_ignore=short}
+C {iopin.sym} 240 -560 0 1 {name=p8 lab=VSS
+
+}
+C {pwroli.sym} 320 -480 0 0 {name=l2 lab=VSS}
+C {iopin.sym} 240 -800 0 1 {name=p9 lab=f_freq}
+C {launcher.sym} 260 -320 0 0 {name=h1
+descr="write LVS netlist"
+tclcommand="
+	xschem set netlist_type spice
+	set lvs_ignore 1
+	set lvs_netlist 1
+	set spiceprefix 0
+	set last_local_netlist_dir $local_netlist_dir
+	set local_netlist_dir 0
+	xschem netlist [xschem get current_name].cdl
+	set local_netlist_dir $last_local_netlist_dir
+
+"
+}
+C {simulator_commands_shown.sym} 160 -190 0 0 {name=COMMANDS2
+simulator=none
+only_toplevel=false 
+
+value="tcleval(
+top: [xschem get schname 0]
+io:  [xschem get schname]
+
+)"}
+C {launcher.sym} 260 -280 0 0 {name=h2
+descr="load OP from TOP"
+tclcommand="
+	xschem annotate_op $\{netlist_dir\}/[file rootname [file tail [xschem get schname 0]]]_mostt.spice.raw 0;
+
+"
+}
+C {iopin.sym} 240 -1040 0 1 {name=p1 lab=out_p}
+C {iopin.sym} 240 -1360 0 1 {name=p4 lab=c1}
+C {iopin.sym} 2080 -1360 2 1 {name=p5 lab=c2}
+C {iopin.sym} 2080 -1040 2 1 {name=p2 lab=out_n}
+C {iopin.sym} 240 -1520 0 1 {name=p3 lab=VDD}
+C {pwroli.sym} 320 -1600 2 0 {name=l5 lab=VDD
+}
+C {pwroli.sym} 1360 -480 0 1 {name=l9 lab=VSS}
+C {ammeter.sym} 1360 -510 0 1 {name=Vsss4 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 1340 -640 0 0 {name=Q12
+model=npn13G2
+spiceprefix=X
+Nx=2
+Sub=VSS}
+C {npn13G2oli.sym} 1180 -800 0 0 {name=Q13
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {npn13G2oli.sym} 1540 -800 0 1 {name=Q14
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {res.sym} 1200 -1440 2 0 {name=R10
+value=66
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1520 -1440 2 0 {name=R11
+value=66
+footprint=1206
+device=resistor
+m=1}
+C {npn13G2oli.sym} 1140 -1360 0 1 {name=Q17
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {npn13G2oli.sym} 1580 -1360 0 0 {name=Q18
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {ammeter.sym} 1600 -1570 0 0 {name=Vddd7
+savecurrent=true
+lvs_ignore=short}
+C {pwroli.sym} 1600 -1600 2 0 {name=l13 lab=VDD
+}
+C {ammeter.sym} 1120 -1570 0 0 {name=Vddd8
+savecurrent=true
+lvs_ignore=short}
+C {pwroli.sym} 1120 -1600 2 0 {name=l14 lab=VDD
+}
+C {pwroli.sym} 1120 -480 0 1 {name=l15 lab=VSS}
+C {ammeter.sym} 1120 -510 0 1 {name=Vsss5 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 1100 -640 0 0 {name=Q19
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {pwroli.sym} 1600 -480 0 1 {name=l16 lab=VSS}
+C {ammeter.sym} 1600 -510 0 1 {name=Vsss6 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 1580 -640 0 0 {name=Q20
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {ngspice_probe.sym} 1330 -750 0 0 {name=r2}
+C {ngspice_probe.sym} 1440 -1040 0 0 {name=r4}
+C {ngspice_probe.sym} 1120 -930 0 0 {name=r6}
+C {ngspice_probe.sym} 1200 -1360 0 0 {name=r7}
+C {ngspice_probe.sym} 1520 -1360 0 0 {name=r8}
+C {pwroli.sym} 640 -480 0 1 {name=l3 lab=VSS}
+C {ammeter.sym} 640 -510 0 1 {name=Vsss1 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 620 -640 0 0 {name=Q1
+model=npn13G2
+spiceprefix=X
+Nx=4
+Sub=VSS}
+C {npn13G2oli.sym} 1420 -960 0 0 {name=Q2
+model=npn13G2
+spiceprefix=X
+Nx=2
+Sub=VSS}
+C {npn13G2oli.sym} 1300 -960 0 1 {name=Q3
+model=npn13G2
+spiceprefix=X
+Nx=2
+Sub=VSS}
+C {ammeter.sym} 1200 -1570 0 0 {name=Vddd4
+savecurrent=true
+lvs_ignore=short}
+C {pwroli.sym} 1200 -1600 2 0 {name=l8 lab=VDD
+}
+C {ammeter.sym} 1520 -1570 0 0 {name=Vddd5
+savecurrent=true
+lvs_ignore=short}
+C {pwroli.sym} 1520 -1600 2 0 {name=l10 lab=VDD
+}
+C {ngspice_probe.sym} 1440 -890 0 0 {name=r9}
+C {pwroli.sym} 480 -480 0 0 {name=l11 lab=VSS}
+C {ammeter.sym} 480 -510 0 0 {name=Vsss2 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 500 -640 0 1 {name=Q4
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {ngspice_probe.sym} 540 -690 0 0 {name=r18}
+C {pwroli.sym} 800 -480 0 0 {name=l17 lab=VSS}
+C {ammeter.sym} 800 -510 0 0 {name=Vsss7 
+savecurrent=true
+lvs_ignore=short}
+C {npn13G2oli.sym} 820 -640 0 1 {name=Q5
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {ngspice_probe.sym} 860 -690 0 1 {name=r20}
+C {ammeter.sym} 320 -720 3 1 {name=Vddd1
+savecurrent=true
+lvs_ignore=short}
+C {iopin.sym} 240 -720 0 1 {name=p6 lab=f_gain
+
+}
+C {npn13G2oli.sym} 1500 -1200 0 0 {name=Q6
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {npn13G2oli.sym} 1180 -1200 0 0 {name=Q7
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {npn13G2oli.sym} 940 -960 0 0 {name=Q9
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {npn13G2oli.sym} 940 -1120 0 0 {name=Q10
+model=npn13G2
+spiceprefix=X
+Nx=1
+Sub=VSS}
+C {res.sym} 960 -1450 2 0 {name=R1
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {ngspice_probe.sym} 960 -1370 0 0 {name=r3}
+C {ammeter.sym} 960 -1580 0 0 {name=Vddd2
+savecurrent=true
+lvs_ignore=short}
+C {pwroli.sym} 960 -1610 2 0 {name=l6 lab=VDD
+}
