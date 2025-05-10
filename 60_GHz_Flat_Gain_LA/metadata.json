@@ -1,0 +1,14 @@
+{
+  "ProjectName": "FMD_QNC_60_GHZ_LA",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "60 GHz Flat Gain Limiting Amplifier",
+    "FinalGdsName": "FMD_QNC_60_GHZ_LA.gds",
+    "TopCellName": "FMD_QNC_60_GHZ_LA",
+    "Width": "1.0099mm",
+    "Height": "1.0436mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}
