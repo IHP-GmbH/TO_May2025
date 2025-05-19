@@ -1,13 +1,13 @@
 {
-  "ProjectName": "FMD_QNC_Open",
+  "ProjectName": "FMD_QNC_TIA_CASCODE",
   "Shuttle": "MPW 0.13µm May 2025(T588)",
   "Technology": "SG13G2",
   "Design": {
-    "DesignName": "ExampleDesign",
-    "FinalGdsName": "FMD_QNC_ExampleDesign.gds",
-    "TopCellName": "FMD_QNC_ExampleDesign",
-    "Width": "1.2mm",
-    "Height": "1.4mm",
+    "DesignName": "Tia Cascode",
+    "FinalGdsName": "FMD_QNC_TIA_CASCODE.gds",
+    "TopCellName": "FMD_QNC_TIA_CASCODE",
+    "Width": "0.7mm",
+    "Height": "0.7mm",
     "NumberOfSamples": "10"
   },
   "FinalWaferThickness": "200um"
