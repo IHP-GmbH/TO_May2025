@@ -1,0 +1,167 @@
+* Qucs 25.1.2  /home/rupok_nsl/QucsWorkspace/CHEF_prj/CHEF_4\netlist.sch
+
+.SUBCKT FMD_QNC_60_GHZ_LA
+
+Q31 RFOUT1 CHout1 \net0 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+
+Q23 CHout1 \net1 \net2 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+
+Q24 CHout2 \net3 \net2 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+
+Q21 \net1 EFout1 \net4 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+Q25 \VCC \net5 \net6 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+Q22 \net3 EFout2 \net4 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+Q26 \VCC \net7 \net8 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+
+QTAIL21 \net4 ref \net9 0 npn13G2 AE=0.063p PE=1.94u AB=19.2965p PB=19.32u
++ AC=19.283334p PC=19.31u NE=3 m=3
+
+
+QTAIL22 \net2 ref \net10 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+R2F1 \net1 \net6 rppd w=12U l=3.1U m=1
+R2F2 \net3 \net8 rppd w=12U l=3.1U m=1
+R2L1 \VCC \net5 rppd w=21U l=2U m=1
+R2L2 \VCC \net7 rppd w=21U l=2U m=1
+
+Q32 RFOUT2 CHout2 \net11 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+R3C2 \VCC RFOUT2 rppd w=18U l=2.7U m=1
+R3E1 \net0 \net12 rsil w=20U l=22U m=1
+R3E2 \net11 \net12 rsil w=20U l=22U m=1
+R2C1 \net5 CHout1 rppd w=18U l=2U m=1
+R2C2 \net7 CHout2 rppd w=18U l=2U m=1
+
+QTAIL31 \net12 \net12 \net13 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+
+
+QTAIL32 \net13 ref \net14 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+
+*RTAIL23 \net10 0 rsil w=20U l=2.6U m=1
+*RTAIL24 \net10 0 rsil w=20U l=2.6U m=1
+RTAIL22 \net10 0 rsil w=20U l=2.6U m=2
+
+*RTAIL31 \net14 0 rsil w=20U l=2.6U m=1
+*RTAIL32 \net14 0 rsil w=20U l=2.6U m=1
+RTAIL3 \net14 0 rsil w=20U l=2.6U m=2
+
+QB1 VBias \net15 \net16 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+
+DCAPB VBias 0 cap_cmim l=30U w=30U
+RBB1 VBias \net15 rhigh w=4U l=4U m=1
+
+*RBC1 \VCC VBias rhigh w=2U l=4U m=1
+*RBC2 \VCC VBias rhigh w=2U l=4U m=1
+RBC1 \VCC VBias rhigh w=2U l=4U m=2
+
+QB2 \net17 \net18 0 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+
+RBB2 \net17 \net18 rhigh w=4U l=4U m=1
+
+*RBC3 \net16 \net17 rhigh w=2U l=6.4U m=1
+*RBC4 \net16 \net17 rhigh w=2U l=6.4U m=1
+RBC2 \net16 \net17 rhigh w=2U l=6.4U m=2
+
+
+Q13 \VCC \VCC \net19 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+Q11 \net19 RFIN1 EFout1 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+
+
+Q14 \VCC \VCC \net20 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+Q12 \net20 RFIN2 EFout2 0 npn13G2 AE=0.063p PE=1.94u AB=31.9135p PB=26.72u
++ AC=31.896634p PC=26.71u NE=5 m=5
+
+
+QTAIL11 \net21 ref \net22 0 npn13G2 AE=0.063p PE=1.94u AB=63.456p PB=45.22u
++ AC=63.429884p PC=45.21u NE=10 m=10
+
+*RTAIL11 \net22 0 rsil w=20U l=3.2U m=1
+*RTAIL12 \net22 0 rsil w=20U l=3.2U m=1
+RTAIL1 \net22 0 rsil w=20U l=3.2U m=2
+
+R1E1 \net21 EFout1 rppd w=12U l=3.3U m=1
+R1E2 \net21 EFout2 rppd w=12U l=3.3U m=1
+R1B1 RFIN1 VBias rsil w=2U l=10.38U m=1
+
+*RTAIL21 \net9 0 rsil w=20U l=18U m=1
+*RTAIL22 \net9 0 rsil w=20U l=18U m=1
+RTAIL21 \net9 0 rsil w=20U l=18U m=2
+
+QCUR3 \net23 ref 0 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+
+QCUR2 \net24 \net23 ref 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+RCUR \VCC \net23 rppd w=5U l=13U m=1
+
+
+QCUR1 \VCC \VCC \net24 0 npn13G2 AE=0.063p PE=1.94u AB=6.6795p PB=11.92u
++ AC=6.670034p PC=11.91u NE=1 m=1
+
+*DCAPREF11 ref 0 cap_cmim l=30U w=30U
+*DCAPREF12 ref 0 cap_cmim l=30U w=30U
+*DCAPREF21 ref 0 cap_cmim l=30U w=30U
+*DCAPREF22 ref 0 cap_cmim l=30U w=30U
+*DCAPREF31 ref 0 cap_cmim l=30U w=30U
+*DCAPREF32 ref 0 cap_cmim l=30U w=30U
+DCAPREF ref 0 cap_cmim l=30U w=30U m=6
+
+*DCAPGND11 \net21 0 cap_cmim l=30U w=30U
+*DCAPGND12 \net21 0 cap_cmim l=30U w=30U
+DCAPGND1 \net21 0 cap_cmim l=30U w=30U m=2
+
+*DCAPGND23 \net2 0 cap_cmim l=30U w=30U
+*DCAPGND24 \net2 0 cap_cmim l=30U w=30U
+DCAPGND22 \net2 0 cap_cmim l=30U w=30U m=2
+
+*DCAPGND21 \net4 0 cap_cmim l=30U w=30U
+*DCAPGND22 \net4 0 cap_cmim l=30U w=30U
+DCAPGND21 \net4 0 cap_cmim l=30U w=30U m=2
+
+*DCAPGND32 \net12 0 cap_cmim l=30U w=30U
+*DCAPGND31 \net12 0 cap_cmim l=30U w=30U
+DCAPGND3 \net12 0 cap_cmim l=30U w=30U m=2
+
+*DCAP13 \VCC 0 cap_cmim l=30U w=30U
+*DCAP11 \VCC 0 cap_cmim l=30U w=30U
+*DCAP12 \VCC 0 cap_cmim l=30U w=30U
+*DCAP14 \VCC 0 cap_cmim l=30U w=30U
+*DCAP23 \VCC 0 cap_cmim l=30U w=30U
+*DCAP21 \VCC 0 cap_cmim l=30U w=30U
+*DCAP22 \VCC 0 cap_cmim l=30U w=30U
+*DCAP24 \VCC 0 cap_cmim l=30U w=30U
+*DCAP32 \VCC 0 cap_cmim l=30U w=30U
+*DCAP34 \VCC 0 cap_cmim l=30U w=30U
+*DCAP33 \VCC 0 cap_cmim l=30U w=30U
+*DCAP31 \VCC 0 cap_cmim l=30U w=30U
+*DCAP27 \VCC 0 cap_cmim l=30U w=30U
+*DCAP25 \VCC 0 cap_cmim l=30U w=30U
+*DCAP28 \VCC 0 cap_cmim l=30U w=30U
+*DCAP26 \VCC 0 cap_cmim l=30U w=30U
+DCAP \VCC 0 cap_cmim w=30u l=30u A=900p P=120u m=16
+
+R3C1 \VCC RFOUT1 rppd w=18U l=2.7U m=1
+R1B2 RFIN2 VBias rsil w=2U l=10.38U m=1
+.END
