@@ -1,0 +1,40 @@
+* Qucs 25.1.2  C:/Users/nsl/QucsWorkspace/ikram_prj/Beta multiplier_Netlist.sch
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_hv_pmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 
+X1 d g s b  sg13_hv_pmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout}
+.ENDS
+  
+
+.SUBCKT IHP_PDK_basic_components_rhigh  gnd P1 P2 w=1.0e-6 l=0.5e-6 m=1
+X1 P1 P2 rhigh w={w} l={l} m={m}
+.ENDS
+  
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_lv_pmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 
+X1 d g s b  sg13_lv_pmos w={w} l={l} ng={ng} m={1} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout}
+.ENDS
+  
+.GLOBAL 0:G
+
+.SUBCKT FMD_QNC_D_BAND_PD
+Xsg13_lv_nmos2 0  B B VEE 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos4 0  A _net0 B 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+
+Xsg13_lv_nmos3 0  _net0 B 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+
+
+Xsg13_hv_pmos1 0  VCC1p3V _net0 _net0 VCC1p3V IHP_PDK_nonlinear_components_sg13_hv_pmos w=0.5U l=5U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xrhigh1 0  _net1 VEE IHP_PDK_basic_components_rhigh w=3U l=17U m=1
+Xsg13_lv_nmos1 0  A B _net1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=4 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_pmos2 0  VCC1p3V A B VCC1p3V IHP_PDK_nonlinear_components_sg13_lv_pmos w=2.5U l=1U ng=1 m=2 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_pmos1 0  VCC1p3V A A VCC1p3V IHP_PDK_nonlinear_components_sg13_lv_pmos w=2.5U l=1U ng=1 m=2 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+
+
+
+
+Xsg13_lv_nmos5 0  _net2 _net2 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos6 0  RefCurrent _net2 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=1U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_pmos3 0  VCC1p3V A _net2 VCC1p3V IHP_PDK_nonlinear_components_sg13_lv_pmos w=2.5U l=1U ng=1 m=2 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+.END
