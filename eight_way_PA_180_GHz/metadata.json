@@ -1,0 +1,14 @@
+{
+  "ProjectName": "FMD_QNC_Open",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "Eight Way PA with State of the Art Psat at 180 GHz",
+    "FinalGdsName": "FMD_QNC_10_8way_PA_180G.gds",
+    "TopCellName": "FMD_QNC_10_8way_PA_180G",
+    "Width": "2.190mm",
+    "Height": "2.405mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}
