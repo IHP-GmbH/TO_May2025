@@ -1,0 +1,37 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=nmos
+lvs_format="@name @pinlist @model w=@w l=@l m=@m ng=@ng"
+format="@spiceprefix@name @pinlist @substrate @model w=@w l=@l ng=@ng m=@m"
+template="name=M1
+l=0.45u
+w=1.0u
+ng=1
+m=1
+substrate=VSS
+model=sg13_lv_nmos
+spiceprefix=X
+"}
+V {}
+S {}
+E {}
+L 4 5 -30 5 30 {}
+L 4 5 -20 20 -20 {}
+L 4 20 -30 20 -20 {}
+L 4 5 20 20 20 {}
+L 4 20 20 20 30 {}
+L 4 -5 -15 -5 15 {}
+L 4 -5 0 -5 5 {}
+L 4 -20 0 -12.5 0 {}
+L 4 -20 0 -5 0 {}
+L 4 8 16 18 20 {}
+L 4 8 24 18 20 {}
+L 4 8 16 8 24 {}
+B 5 17.5 -32.5 22.5 -27.5 {name=d dir=inout}
+B 5 -22.5 -2.5 -17.5 2.5 {name=g dir=in}
+B 5 17.5 27.5 22.5 32.5 {name=s dir=inout}
+T {@w\\/@l x@m ng=@ng} 8 -20 0 0 0.2 0.2 {}
+T {@model} 8 4 0 0 0.2 0.2 {}
+T {D} 25 -27.5 0 0 0.15 0.15 {}
+T {@substrate} 21.5 16.875 0 0 0.1 0.1 {layer=4}
+T {@name} -20 -30 0 0 0.2 0.2 {}

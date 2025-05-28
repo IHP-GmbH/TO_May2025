@@ -1,0 +1,14 @@
+{
+  "ProjectName": "FMD_QNC_HBT_ACT_L_DUAL",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "FMD_QNC_HBT_ACT_L_DUAL",
+    "FinalGdsName": "FMD_QNC_HBT_ACT_L_DUAL.gds",
+    "TopCellName": "FMD_QNC_HBT_ACT_L_DUAL",
+    "Width": "0.502mm",
+    "Height": "0.602mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}

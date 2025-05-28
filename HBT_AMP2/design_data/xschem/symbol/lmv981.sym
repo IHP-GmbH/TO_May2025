@@ -1,0 +1,29 @@
+v {xschem version=3.4.1 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"}
+V {}
+S {}
+E {}
+L 4 -55 -30 -45 -30 {}
+L 4 -50 -35 -50 -25 {}
+L 4 -55 30 -45 30 {}
+L 4 -60 50 60 -0 {}
+L 4 -60 -50 60 -0 {}
+L 4 -60 -50 -60 50 {}
+L 4 -0 25 0 40 {}
+L 4 17 18 20 40 {}
+L 4 0 -40 0 -25 {}
+B 5 -62.5 -32.5 -57.5 -27.5 {name=1 sig_type=std_logic dir=in }
+B 5 -62.5 27.5 -57.5 32.5 {name=2 sig_type=std_logic dir=in }
+B 5 -2.5 -42.5 2.5 -37.5 {name=3 sig_type=std_logic dir=in }
+B 5 -2.5 37.5 2.5 42.5 {name=4 sig_type=std_logic dir=in }
+B 5 57.5 -2.5 62.5 2.5 {name=5 sig_type=std_logic dir=out }
+B 5 17.5 37.5 22.5 42.5 {name=6 sig_type=std_logic dir=in }
+T {@symname} -58.5 -16 0 0 0.3 0.3 {}
+T {@name} -55 -62 0 0 0.2 0.2 {}
+T {OUT} 45 -4 0 1 0.2 0.2 {}
+T {VSS} -35 21 0 0 0.2 0.2 {}
+T {VCC} -30 -29 0 0 0.2 0.2 {}

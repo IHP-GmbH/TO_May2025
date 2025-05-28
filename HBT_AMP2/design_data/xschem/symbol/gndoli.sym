@@ -1,0 +1,21 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=label
+function0="L"
+global=true
+format="*.alias @lab"
+template="name=l1 lab=GND"}
+V {}
+S {}
+E {}
+L 4 -0 -0 0 2 {}
+L 4 -0 -0 0 5 {}
+L 4 0 5 8 2 {}
+L 4 -8 8 0 5 {}
+L 4 0 6 8 3 {}
+L 4 -8 9 0 6 {}
+L 4 -8 8 -8 9 {}
+L 4 8 2 8 3 {}
+B 5 -2.5 -2.5 2.5 2.5 {name=p dir=inout goto=0}
+T {@lab} -12.5 10 0 0 0.2 0.2 {}

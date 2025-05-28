@@ -1,0 +1,58 @@
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH1.sch
+.subckt AMP_EH1
+
+x1 VDD net7 net6 VSS ld net8 vgnd AMP_EH nw=1u nl=1u pw=2u pl=1u
+R3 net2 net7 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R1 net5 net6 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R2 net6 net3 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R5 net7 net4 rppd w=7e-6 l=2.2e-6 m=1 b=0
+**** begin user architecture code
+
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sym # of pins=7
+** sym_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sym
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sch
+.subckt AMP_EH VDD ip in VSS op sink vGND  nw=1u nl=1u pw=2u pl=1u
+*.PININFO in:I VSS:B VDD:B sink:B ip:I op:O vGND:B
+C1 net3 net2 10f
+Q7 net2 in net7 VSS npn13G2 Nx=1
+Q8 net3 ip net8 VSS npn13G2 Nx=1
+Q9 net4 net1 VSS VSS npn13G2 Nx=1
+Q5 net4 net1 VSS VSS npn13G2 Nx=1
+Q3 VDD net2 net9 VSS npn13G2 Nx=1
+Q4 VDD net3 net11 VSS npn13G2 Nx=1
+Q10 net6 net5 VSS VSS npn13G2 Nx=1
+Q11 op net6 VSS VSS npn13G2 Nx=1
+Q12 net5 net5 VSS VSS npn13G2 Nx=1
+Q1 net1 net1 VSS VSS npn13G2 Nx=1
+R2 vGND VSS rppd w=1e-6 l=95.5e-6 m=1 b=0
+R3 VDD vGND rppd w=1e-6 l=95.5e-6 m=1 b=0
+R22 vGND ip rppd w=.7e-6 l=13e-6 m=1 b=0
+R4 vGND in rppd w=.7e-6 l=13e-6 m=1 b=0
+R5 net7 net4 rppd w=1e-6 l=3.3e-6 m=3 b=0
+R10 net8 net4 rppd w=1e-6 l=3.3e-6 m=3 b=0
+R9 VDD net2 rppd w=1e-6 l=15.2e-6 m=2 b=0
+R12 VDD net3 rppd w=1e-6 l=15.2e-6 m=2 b=0
+R6 net5 net9 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R8 net6 net11 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R7 net10 net9 rppd w=1e-6 l=30.4e-6 m=1 b=0
+Q2 op net6 VSS VSS npn13G2 Nx=1
+Q6 op net6 VSS VSS npn13G2 Nx=1
+Q13 op net6 VSS VSS npn13G2 Nx=1
+Q14 op net6 VSS VSS npn13G2 Nx=1
+Q15 op net6 VSS VSS npn13G2 Nx=1
+R1 net1 VDD rppd w=1e-6 l=210.1e-6 m=1 b=0
+R27 net12 VDD rppd w=1e-6 l=15.2e-6 m=1 b=0
+R28 net13 VDD rppd w=1e-6 l=15.2e-6 m=1 b=0
+R29 net14 net15 rppd w=1e-6 l=3.3e-6 m=1 b=0
+R30 net16 net17 rppd w=1e-6 l=3.3e-6 m=1 b=0
+R31 net18 net19 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R32 net20 net11 rppd w=1e-6 l=15.2e-6 m=1 b=0
+.ends
+
+.GLOBAL GND

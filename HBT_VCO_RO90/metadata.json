@@ -1,0 +1,14 @@
+{
+  "ProjectName": "HBT_VCO_RO90",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "FMD_QNC_HBT_RO90",
+    "FinalGdsName": "FMD_QNC_HBT_RO90.gds",
+    "TopCellName": "FMD_QNC_HBT_RO90",
+    "Width": "0.502mm",
+    "Height": "0.602mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}

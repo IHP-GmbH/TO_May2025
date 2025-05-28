@@ -1,0 +1,25 @@
+v {xschem version=3.4.7RC file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -70 -60 70 -60 {}
+L 4 70 -60 70 70 {}
+L 4 -70 70 70 70 {}
+L 4 -70 -60 -70 70 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VDD dir=inout}
+B 5 67.5 -2.5 72.5 2.5 {name=REF1.2 dir=inout}
+B 5 -72.5 -2.5 -67.5 2.5 {name=REFADJ dir=inout}
+B 5 37.5 67.5 42.5 72.5 {name=SHUNT_GND dir=inout}
+B 5 -2.5 67.5 2.5 72.5 {name=VSS dir=inout}
+T {@symname} -36.5 14 0 0 0.3 0.3 {}
+T {@name} -65 -82 0 0 0.2 0.2 {}
+T {VDD} 15 -44 0 1 0.2 0.2 {}
+T {REF1.2} 45 -4 0 1 0.2 0.2 {}
+T {REFADJ} -15 -4 0 1 0.2 0.2 {}
+T {SHUNT_GND} 75 46 0 1 0.2 0.2 {}
+T {VSS} 5 46 0 1 0.2 0.2 {}

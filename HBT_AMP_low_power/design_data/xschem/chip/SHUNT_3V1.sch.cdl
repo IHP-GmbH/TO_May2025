@@ -1,0 +1,79 @@
+** sch_path: /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/SHUNT_3V1.sch
+.subckt SHUNT_3V1 VSS VDD REFADJ REF1.2 SHUNT_GND
+*.PININFO VSS:B VDD:B REFADJ:B REF1.2:B SHUNT_GND:B
+M11 REF1.2 net3 VDD VDD sg13_hv_pmos w=8e-05 l=2e-06 ng=8
+Q3 VSS VSS net4 pnpMPA a={ 1.0u * 2.0u } p={ ( 1.0u + 2.0u ) * 2 }
+M12 net3 net2 net5 VSS sg13_hv_nmos w=1e-05 l=2e-06 ng=1
+M13 net2 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M14 net3 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M15 net2 net2 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+R9 net4 REF1.2 rppd w=1e-6 l=10e-6 m=1 b=10
+R10 VSS net5 rppd w=1e-6 l=10e-6 m=1 b=12
+M7 net8 net6 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+M6 net6 net6 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+M8 net6 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M1 SHUNT_GND DRV_SHUNT VDD VDD sg13_hv_pmos w=0.0006 l=1e-06 ng=20
+x12 VDD REF1.2 net7 VSS DRV_SHUNT net8 VDD DRV_SHUNT VDD VSS OTA3C nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+R1 VDD net7 rppd w=.5e-6 l=10e-6 m=1 b=14
+R2 net7 VSS rppd w=.5e-6 l=10e-6 m=1 b=10
+R3 REFADJ net5 rppd w=1e-6 l=10e-6 m=1 b=12
+C4 REF1.2 VSS cap_cmim w=30.0e-6 l=30.0e-6
+C1 VDD net3 cap_cmim w=30.0e-6 l=30.0e-6
+**** begin user architecture code
+
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA3C.sym # of pins=10
+** sym_path: /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA3C.sym
+** sch_path: /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA3C.sch
+.subckt OTA3C VDD ip in VSS op sink C1 C3 C2 CGND  nw=1u nl=1u pw=2u pl=1u
+*.PININFO in:I VSS:B VDD:B sink:B ip:I op:O C1:B C2:B C3:B CGND:B
+M1 net5 ip net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M2 net4 in net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M3 net5 net5 VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M4 net2 net5 VSS VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+M5 net3 V++ VDD VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+**** begin user architecture code
+
+
+**** end user architecture code
+M6 net1 V+ net3 VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+M7 net9 net4 VSS VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+M8 net4 net4 VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M9 net2 in net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M10 net9 ip net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M11 net7 net8 VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M12 op V+ net7 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M13 op V- net2 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+M14 net6 net8 VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M15 net8 V+ net6 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M16 net8 V- net9 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+x12 VDD sink V++ V+ V- V-- VSS OTA33_BiAS nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+C2 C3 CGND cap_cmim w=9.0e-6 l=30.0e-6
+C3 C2 CGND cap_cmim w=9.0e-6 l=30.0e-6
+C4 C1 CGND cap_cmim w=9.0e-6 l=30.0e-6
+.ends
+
+
+* expanding   symbol:  /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA33_BiAS.sym # of pins=7
+** sym_path: /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA33_BiAS.sym
+** sch_path: /ALL/git_olisnr/TO_Dec2024-main/RF_amplifiers/design_data/xschem/shunt_regulator/OTA33_BiAS.sch
+.subckt OTA33_BiAS VDD sink V++ V+ V- V-- VSS  nw=1u nl=1u pw=2u pl=1u
+*.PININFO VSS:B VDD:B sink:B V++:B V+:B V-:B V--:B
+M1 net3 V+ net1 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M2 net2 V-- VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M3 V-- V- net2 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M4 net1 V++ VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M5 V- net3 V-- VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M6 net3 net3 V- VSS sg13_hv_nmos w=1e-06 l=2e-06 ng=1
+M7 V++ V+ net4 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M8 net4 V++ VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M9 sink sink V+ VDD sg13_hv_pmos w=2e-06 l=2e-06 ng=1
+M10 V+ sink V++ VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+.ends
+
+.GLOBAL GND

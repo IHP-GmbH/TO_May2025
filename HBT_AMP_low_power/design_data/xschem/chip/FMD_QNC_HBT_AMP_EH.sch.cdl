@@ -1,0 +1,161 @@
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/FMD_QNC_HBT_AMP_EH.sch
+.subckt FMD_QNC_HBT_AMP_EH
+
+x1 VDD net7 net6 VSS ld net8 vgnd AMP_EH nw=1u nl=1u pw=2u pl=1u
+x2 VDD vref vadj vss_shunt VSS SHUNT_3V1_min
+X3 vadj bondpad
+X4 VSS bondpad
+X5 VDD bondpad
+X6 vss_shunt bondpad
+X7 vgnd bondpad
+X8 ld bondpad
+X9 net3 bondpad
+X10 net2 bondpad
+X11 net5 bondpad
+X12 net4 bondpad
+R3 net2 net7 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R1 net5 net6 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R2 net6 net3 rppd w=7e-6 l=2.2e-6 m=1 b=0
+R5 net7 net4 rppd w=7e-6 l=2.2e-6 m=1 b=0
+X14 vref bondpad
+X13 VSS bondpad
+C1 VDD VSS cap_cmim w=60e-6 l=90e-6
+**** begin user architecture code
+
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sym # of pins=7
+** sym_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sym
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/AMP_EH.sch
+.subckt AMP_EH VDD ip in VSS op sink vGND  nw=1u nl=1u pw=2u pl=1u
+*.PININFO in:I VSS:B VDD:B sink:B ip:I op:O vGND:B
+C1 net3 net2 10f
+Q7 net2 in net7 VSS npn13G2 Nx=1
+Q8 net3 ip net8 VSS npn13G2 Nx=1
+Q9 net4 net1 VSS VSS npn13G2 Nx=1
+Q5 net4 net1 VSS VSS npn13G2 Nx=1
+Q3 VDD net2 net9 VSS npn13G2 Nx=1
+Q4 VDD net3 net11 VSS npn13G2 Nx=1
+Q10 net6 net5 VSS VSS npn13G2 Nx=1
+Q11 op net6 VSS VSS npn13G2 Nx=1
+Q12 net5 net5 VSS VSS npn13G2 Nx=1
+Q1 net1 net1 VSS VSS npn13G2 Nx=1
+R2 vGND VSS rppd w=1e-6 l=95.5e-6 m=1 b=0
+R3 VDD vGND rppd w=1e-6 l=95.5e-6 m=1 b=0
+R22 vGND ip rppd w=.7e-6 l=13e-6 m=1 b=0
+R4 vGND in rppd w=.7e-6 l=13e-6 m=1 b=0
+R5 net7 net4 rppd w=1e-6 l=3.3e-6 m=3 b=0
+R10 net8 net4 rppd w=1e-6 l=3.3e-6 m=3 b=0
+R9 VDD net2 rppd w=1e-6 l=15.2e-6 m=2 b=0
+R12 VDD net3 rppd w=1e-6 l=15.2e-6 m=2 b=0
+R6 net5 net9 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R8 net6 net11 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R7 net10 net9 rppd w=1e-6 l=30.4e-6 m=1 b=0
+Q2 op net6 VSS VSS npn13G2 Nx=1
+Q6 op net6 VSS VSS npn13G2 Nx=1
+Q13 op net6 VSS VSS npn13G2 Nx=1
+Q14 op net6 VSS VSS npn13G2 Nx=1
+Q15 op net6 VSS VSS npn13G2 Nx=1
+R1 net1 VDD rppd w=1e-6 l=210.1e-6 m=1 b=0
+R27 net12 VDD rppd w=1e-6 l=15.2e-6 m=1 b=0
+R28 net13 VDD rppd w=1e-6 l=15.2e-6 m=1 b=0
+R29 net14 net15 rppd w=1e-6 l=3.3e-6 m=1 b=0
+R30 net16 net17 rppd w=1e-6 l=3.3e-6 m=1 b=0
+R31 net18 net19 rppd w=1e-6 l=15.2e-6 m=1 b=0
+R32 net20 net11 rppd w=1e-6 l=15.2e-6 m=1 b=0
+.ends
+
+
+* expanding   symbol:  /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/SHUNT_3V1_min.sym # of pins=5
+** sym_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/SHUNT_3V1_min.sym
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/SHUNT_3V1_min.sch
+.subckt SHUNT_3V1_min VDD REF1.2 REFADJ SHUNT_GND VSS
+*.PININFO VSS:B VDD:B REFADJ:B REF1.2:B SHUNT_GND:B
+**** begin user architecture code
+
+
+**** end user architecture code
+**** begin user architecture code
+
+
+**** end user architecture code
+M11 REF1.2 net3 VDD VDD sg13_hv_pmos w=8e-05 l=2e-06 ng=8
+Q3 VSS VSS net4 pnpMPA a={ 2u * .7u } p={ ( 2u + .7u ) * 2 }
+M12 net3 net2 net5 VSS sg13_hv_nmos w=1e-05 l=2e-06 ng=1
+M13 net2 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M14 net3 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M15 net2 net2 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+R9 net4 REF1.2 rppd w=1e-6 l=110e-6 m=1 b=0
+R10 VSS net5 rppd w=1e-6 l=130e-6 m=1 b=0
+M7 net8 net6 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+M6 net6 net6 VSS VSS sg13_hv_nmos w=2e-06 l=2e-06 ng=1
+M8 net6 net3 VDD VDD sg13_hv_pmos w=2e-05 l=2e-06 ng=2
+M1 SHUNT_GND DRV_SHUNT VDD VDD sg13_hv_pmos w=0.0006 l=1e-06 ng=20
+x12 VDD REF1.2 net7 VSS DRV_SHUNT net8 VDD DRV_SHUNT VDD VSS OTA3C nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+R1 VDD net7 rppd w=.5e-6 l=150e-6 m=1 b=0
+R2 net7 VSS rppd w=.5e-6 l=110e-6 m=1 b=0
+R3 REFADJ net5 rppd w=1e-6 l=130e-6 m=1 b=0
+C4 REF1.2 VSS cap_cmim w=30.0e-6 l=30.0e-6
+C1 VDD net3 cap_cmim w=30.0e-6 l=30.0e-6
+R6 net9 net5 rppd w=1e-6 l=10e-6 m=1 b=0
+R7 net5 net10 rppd w=1e-6 l=10e-6 m=1 b=0
+R8 net11 net12 rppd w=1e-6 l=10e-6 m=1 b=0
+R12 net13 net14 rppd w=1e-6 l=10e-6 m=1 b=0
+R13 net15 net16 rppd w=1e-6 l=10e-6 m=1 b=0
+R14 net17 net18 rppd w=1e-6 l=10e-6 m=1 b=0
+.ends
+
+
+* expanding   symbol:  /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA3C.sym # of pins=10
+** sym_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA3C.sym
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA3C.sch
+.subckt OTA3C VDD ip in VSS op sink C1 C3 C2 CGND  nw=1u nl=1u pw=2u pl=1u
+*.PININFO in:I VSS:B VDD:B sink:B ip:I op:O C1:B C2:B C3:B CGND:B
+M1 net5 ip net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M2 net4 in net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M3 net5 net5 VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M4 net2 net5 VSS VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+M5 net3 V++ VDD VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+**** begin user architecture code
+
+
+**** end user architecture code
+M6 net1 V+ net3 VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+M7 net9 net4 VSS VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+M8 net4 net4 VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M9 net2 in net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M10 net9 ip net1 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+M11 net7 net8 VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M12 op V+ net7 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M13 op V- net2 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+M14 net6 net8 VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M15 net8 V+ net6 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+M16 net8 V- net9 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+x12 VDD sink V++ V+ V- V-- VSS OTA33_BiAS nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+C2 C3 CGND cap_cmim w=9.0e-6 l=30.0e-6
+C3 C1 CGND cap_cmim w=18.0e-6 l=30.0e-6
+.ends
+
+
+* expanding   symbol:  /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA33_BiAS.sym # of pins=7
+** sym_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA33_BiAS.sym
+** sch_path: /ALL/Xschem/VCO.xyce/HBT_AMPs/xschem.new.work/chip/OTA33_BiAS.sch
+.subckt OTA33_BiAS VDD sink V++ V+ V- V-- VSS  nw=1u nl=1u pw=2u pl=1u
+*.PININFO VSS:B VDD:B sink:B V++:B V+:B V-:B V--:B
+M1 net3 V+ net1 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M2 net2 V-- VSS VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M3 V-- V- net2 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M4 net1 V++ VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M5 V- net3 V-- VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+M6 net3 net3 V- VSS sg13_hv_nmos w=1e-06 l=2e-06 ng=1
+M7 V++ V+ net4 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M8 net4 V++ VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+M9 sink sink V+ VDD sg13_hv_pmos w=2e-06 l=2e-06 ng=1
+M10 V+ sink V++ VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+.ends
+
+.GLOBAL GND

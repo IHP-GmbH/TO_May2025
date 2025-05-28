@@ -1,0 +1,28 @@
+v {xschem version=3.4.1 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+L 4 -40 -40 50 -0 {}
+L 4 -40 -40 -40 40 {}
+L 4 -40 40 50 0 {}
+L 4 -30 -20 -20 -20 {}
+L 4 -30 20 -20 20 {}
+L 4 -25 -25 -25 -15 {}
+L 4 -0 22 -0 30 {}
+L 4 14 16 20 29 {}
+L 4 -0 -30 0 -22 {}
+B 5 47.5 -2.5 52.5 2.5 {name=XXX
+dir=inout}
+B 5 -42.5 -22.5 -37.5 -17.5 {name=XXX
+dir=inout}
+B 5 -42.5 17.5 -37.5 22.5 {name=XXX
+dir=inout}
+B 5 -2.5 -32.5 2.5 -27.5 {name=XXX
+dir=inout}
+B 5 -2.5 27.5 2.5 32.5 {name=XXX
+dir=inout}
+B 5 17.5 27.5 22.5 32.5 {name=XXX
+dir=inout}

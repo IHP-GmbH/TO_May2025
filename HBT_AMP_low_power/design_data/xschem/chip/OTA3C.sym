@@ -1,0 +1,48 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname nw=@nw nl=@nl pw=@pw pl=@pl"
+template="name=x1 nw=1u nl=1u pw=2u pl=1u" }
+V {}
+S {}
+E {}
+L 4 -60 -60 -60 60 {}
+L 4 -60 60 70 0 {}
+L 4 -60 -60 70 0 {}
+L 4 0 32.5 0 60 {}
+L 4 0 -60 -0 -32.5 {}
+L 4 14 26 20 60 {}
+L 4 27 -20 70 -20 {}
+L 4 18 -24 70 -30 {}
+L 4 12 -27 70 -40 {}
+L 4 27 20 70 20 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VDD dir=inout}
+B 5 -62.5 -32.5 -57.5 -27.5 {name=ip dir=in}
+B 5 -62.5 27.5 -57.5 32.5 {name=in dir=in}
+B 5 -2.5 57.5 2.5 62.5 {name=VSS dir=inout}
+B 5 67.5 -2.5 72.5 2.5 {name=op dir=out}
+B 5 17.5 57.5 22.5 62.5 {name=sink dir=inout}
+B 5 67.5 -42.5 72.5 -37.5 {name=C1 dir=inout}
+B 5 67.5 -22.5 72.5 -17.5 {name=C3 dir=inout}
+B 5 67.5 -32.5 72.5 -27.5 {name=C2 dir=inout}
+B 5 67.5 17.5 72.5 22.5 {name=CGND dir=inout}
+T {@schematic} -58.5 68.5 0 0 0.3 0.3 {}
+T {@name} -37.5 -34.5 0 0 0.3 0.3 {}
+T {VDD} -5 -64 0 1 0.2 0.2 {}
+T {ip} -55 -36.5 0 0 0.2 0.2 {}
+T {in} -55 23.5 0 0 0.2 0.2 {}
+T {VSS} -5 56 0 1 0.2 0.2 {}
+T {nmos: @nw\\/@nl} -53.5 0.5 0 0 0.2 0.2 {}
+T {pmos: @pw\\/@pl} -53.5 -14.5 0 0 0.2 0.2 {}
+T {sink} 27.5 40 1 1 0.16 0.16 {}
+T {@#5:net_name} 26 43 0 0 0.15 0.15 {layer=15}
+T {@#3:net_name} -1 43 0 1 0.15 0.15 {layer=15}
+T {@#4:net_name} 67 -13 0 0 0.15 0.15 {layer=15}
+T {@#2:net_name} -64 19 0 1 0.15 0.15 {layer=15}
+T {@#1:net_name} -64 -41 0 1 0.15 0.15 {layer=15}
+T {@#0:net_name} 1 -56 0 0 0.15 0.15 {layer=15}
+T {C1} 65 -54 0 1 0.2 0.2 {}
+T {C2} 65 -44 0 1 0.2 0.2 {}
+T {C3} 65 -34 0 1 0.2 0.2 {}
+T {CGND} 65 26 0 1 0.2 0.2 {}

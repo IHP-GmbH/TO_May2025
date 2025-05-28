@@ -1,0 +1,14 @@
+{
+  "ProjectName": "FMD_QNC_HBT_DiV_1024",
+  "Shuttle": "MPW 0.13µm May 2025(T588)",
+  "Technology": "SG13G2",
+  "Design": {
+    "DesignName": "FMD_QNC_HBT_DiV_1024",
+    "FinalGdsName": "FMD_QNC_HBT_DiV_mmW.gds",
+    "TopCellName": "FMD_QNC_HBT_DiV_1024",
+    "Width": "0.71mm",
+    "Height": "0.8mm",
+    "NumberOfSamples": "10"
+  },
+  "FinalWaferThickness": "200um"
+}
