@@ -4,7 +4,7 @@
   "Technology": "SG13G2",
   "Design": {
     "DesignName": "D_Band_RF_Power_Detector",
-    "FinalGdsName": "FMD_QNC_D_7_BAND_PD.gds",
+    "FinalGdsName": "FMD_QNC_7_D_BAND_PD.gds",
     "TopCellName": "FMD_QNC_D_BAND_PD",
     "Width": "1.05mm",
     "Height": "0.92mm",
