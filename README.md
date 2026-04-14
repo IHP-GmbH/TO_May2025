@@ -1,114 +1,45 @@
-# TO_May2025
+## Sample request process
 
-This repository is dedicated to the submission of open-source designs based on the IHP 130nm BiCMOS Open Source PDK, specifically for the May 2025 edition of the IHP OpenMPW program. In the future, this repository will be integrated as a submodule within the `IHP-Open-DesignLib` repository.
+The May 2025 run is out of the fab, so you can now ask for samples.
 
-ReadTheDocs documentation for IHP-Open-DesignLib is [here](https://ihp-open-ip.readthedocs.io/en/latest/)
+### What you must do
 
-> [!IMPORTANT]  
-> Submission deadline is **May 9**.
+1. Sign the Hiring Agreement: [samples.rtf](drc/samples.rtf) (download it)
+2. Send the signed file by email to:
+   - **herman(at)ihp-microelectronics.com**
+   - **nkehder(at)ihp-microelectronics.com**
 
-> [!IMPORTANT]  
-> Please read carefully the `ExampleDesign/README.md` and fill metadata.json.
+### Required data in your email
 
-## Physical design constraint
+Please include all contact details:
 
-1. Please align with the layout design rules which can be found [here](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_layout_rules.pdf)
-2. The area granted to a community member is 2 mm^2 It includes the sealring.
-3. The sealring can be found among KLayout PyCells.
+- **Name Last Name**
+- **Address**
+- **Phone number**
+- **Email**
 
-## Submission process
+### Packaging options and bonding plan
 
-To submit for our OpenMPW run you have to have a valid github account. 
-Make a fork of this repository and then create a separate directory for your design next to the `ExampleDesign` (you can also make a copy and rename it). 
-Structure your data according to our recommendations, update the documentation and push your files to your fork, then make a pull request.
+- By default, we send **10 bare dies**.
+- If you need a packaged chip, we can offer **QFN** or **open QFN** with pin counts from **24 to 64**.
+- For bonding, we need a bonding plan.
+- Example bonding plan for a 64-pin QFN: [QFN64.svg](drc/QFN64.svg) (download it)
 
-> [!CAUTION]  
-> On each PR a github action will be triggered to run a minimal DRC precheck (rejection test). Please consider it and do not upload many `gds` files.
+Feel free to use this file and also copy and paste the image of your layout in the center, marking pin number 1.
 
-Once you make a PR a github action will run a minimum set of DRC checks on each `gds` and `gds.zip` file. 
-If the test passes it means that your design is manufacturable at our pilot line not ensuring the reliability. 
-An example of a failure is shown on the following figure 
-
-![drc fail](drc/failure.png)
-
-The detailed report can be downloaded from a link, which can be found at the end of the section `Details->Archive DRC Results` as show on the image:
-
-
-![drc report](drc/report.png)
-
-
-> [!TIP]  
-> To be sure that the design meets the minimum DRC requirements we strongly recommend to run it using klayout DRC as shown below:
->![drc klayout](drc/klayout_mindrc.png)
-
-
-> [!TIP]  
-> The DRC rejection test supports `gds` and `gds.zip` files. In a case of a large file (> 50 MB) you can split the `zip` file and upload multiple `zip` files. On linux you can perform it using the following command:
-
-```
-zip -s 50m -r file.gds.zip output_folder/
-```
-
-## Directory structure
-
-If you are a designer, we propose the following directory structure, which we and the community would appreciate you using. Please ensure that the design you submit is reproducible, meaning it should include all the information necessary to replicate the design.
-
-
-```text
-📁<design_name>
- ┣ 📁design_data
- ┃ ┗ 📁tool1/format1/step1
- ┃  ┗ data
- ┃ ┗ 📁tool2/format2/setp2
- ┃  ┗ data
- ┣ 📁doc
- ┃ ┣ 📜specification
- ┃ ┣ ...
- ┗ 📁val <- validation/verification >
- ```
-The first segmentation separates the `design data` from a `documentation` and `verification/validation data`.
-
-### Design data directory structure
-
-The `design data` should be structured using tool/format/step specific scheme.   
-
-Here you can find some examples:
-
-Example1
-```
-  📁design_data
-   ┗ 📁xschem
-   ┗ 📁ngspice
-   ┗ 📁klayout
-   ┗ 📁drc
-   ┗ 📁lvs
-   ┗ 📁gds
-```
-Example2
-```
-  📁design_data
-   ┗ 📁verilog
-   ┗ 📁sdc
-   ┗ 📁lef
-   ┗ 📁gds
-   ┗ 📁lib
-   ┗ 📁drc
-   ┗ 📁lvs
-   ┗ 📁reports
-   ┗ 📁log
-   ```
-### Documentation
-
-In the `doc` folder the designer should provide the documentation. The best option would be any markdown language compatible with `sphinx` and thus ReadTheDocs system. It would make it easy to create a central point for documentation in the `IHP-Open-DesignLib` repository. 
-We also provide a basic template for the documentation in the `ExampleDesign/doc` directory. To use it execute the following:
-```
-cd ExampleDesign
-pip install -r requirements.txt
-make docs
-```
-Go to `source` directory to modify the `rst` files.
-
-### Verification/validation data
-
-Since one of the principal goals of the OpenMPW runs is a creation of a silicon proven designs we expect from the designers to measure and validate the submitted design and then open source measurements results.
-This directory at the moment of the submission is only a placeholder for future measurements data. A report from the measurements can be part of the documentation. 
+| Design name | Short one line description | Location directory |
+| --- | --- | --- |
+| 207 GHz LNA (`FMD_QNC_207GHz_LNA`) | A 207 GHz low noise amplifier with 33-GHz bandwidth, 12.7 dB peak gain, and 7.9 dB noise figure. | `207GHZ_LNA/` |
+| 60 GHz Flat Gain Limiting Amplifier (`FMD_QNC_60_GHZ_LA`) | DC to 60 GHz flat gain limiting amplifier with 15 dB differential gain and ±2.5 ps group delay variation. | `60_GHz_Flat_Gain_LA/` |
+| Cascode 160 GHz LNA (`FMD_QNC_Cascode_160GHz_LNA`) | A cascode low noise amplifier designed for 160 GHz operation. | `Cascode_160GHz_LNA/` |
+| D-Band RF Power Detector (`FMD_QNC_D_BAND_PD`) | Meyer RF power detector for D-band (110–170 GHz) with >30 dB dynamic range and >500 V/W responsivity. | `D_Band_RF_Power_Detector/` |
+| Cascode TIA (`FMD_QNC_TIA_CASCODE`) | Cascode transimpedance amplifier design. | `FHG_CASCODE_TIA/` |
+| HBT Amplifier 2 (`FMD_QNC_HBT_AMP2`) | HBT-based amplifier design (version 2). | `HBT_AMP2/` |
+| HBT Low-Power Amplifier (`FMD_QNC_HBT_AMP_EH`) | Low-power variant of the HBT amplifier. | `HBT_AMP_low_power/` |
+| HBT Frequency Divider ÷1024 (`FMD_QNC_HBT_DiV_1024`) | HBT-based millimeter-wave frequency divider with a division ratio of 1024. | `HBT_DiV_1024/` |
+| HBT Ring Oscillator 90° (`FMD_QNC_HBT_RO90`) | HBT-based millimeter-wave ring oscillator with quadrature (90°) outputs. | `HBT_VCO_RO90/` |
+| HBT VCO with Active Inductor (`FMD_QNC_HBT_ACT_L`) | HBT voltage-controlled oscillator using an active inductor topology. | `HBT_VCO_active_L/` |
+| HBT VCO with Dual Active Inductor (`FMD_QNC_HBT_ACT_L_DUAL`) | Dual-core variant of the HBT VCO with active inductor topology. | `HBT_VCO_active_L_DUAL/` |
+| 2.45 GHz LNA (`FMD_QNC_LNA_2_45`) | A 2.45 GHz ISM-band low noise amplifier with 19.5 dB gain and ~3 dB noise figure, developed as an open-source analog design tutorial. | `LNA_2.45G/` |
+| Tiny Tapeout IHP 0p3 (`FMD_QNC_TTIHP0p3`) | Experimental open-source Tiny Tapeout multi-project shuttle for IHP SG13G2. | `TTIHP0p3/` |
+| Eight-Way PA at 180 GHz (`FMD_QNC_10_8way_PA_180G`) | Eight-way combined 3-stage common-emitter power amplifier with state-of-the-art Psat at 180 GHz. | `eight_way_PA_180_GHz/` |
